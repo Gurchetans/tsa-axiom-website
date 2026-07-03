@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — TSA Axiom Alloys</title>
+  <meta name="description" content="Contact TSA Axiom Alloys in Ludhiana for quotes on metal castings. Phone, WhatsApp and short inquiry form.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header/footer same as index.html -->
+  <main class="container contact-page">
+    <h1>Contact</h1>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h2>Call or WhatsApp</h2>
+        <p><strong>Phone:</strong> <a href="tel:[PHONE_NUMBER]">[PHONE_NUMBER]</a></p>
+        <p><a href="https://wa.me/91[PHONE_NUMBER]?text=I%20need%20a%20quote%20for%20castings" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+
+        <h3>Email</h3>
+        <p><a href="mailto:[EMAIL]">[EMAIL]</a></p>
+
+        <h3>Address</h3>
+        <p>[STREET_ADDRESS if available]<br>Ludhiana, Punjab, India</p>
+
+        <h3>Business hours</h3>
+        <p>Mon–Fri 09:00–18:00 IST (confirm and update as needed)</p>
+      </div>
+
+      <div class="contact-form-card">
+        <h2>Send an enquiry</h2>
+        <!-- Replace action with your server endpoint or a form service endpoint (Formspree/Netlify) -->
+        <form id="inquiryForm" action="/send-inquiry" method="post">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+
+          <label for="company">Company</label>
+          <input id="company" name="company">
+
+          <label for="interest">Product interest</label>
+          <input id="interest" name="interest" placeholder="e.g., Steering knuckle, Brake drum">
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" required>
+
+          <label for="message">Message / Attach drawings (link)</label>
+          <textarea id="message" name="message"></textarea>
+
+          <button type="submit" class="btn primary">Send enquiry</button>
+        </form>
+        <p class="muted">We respond to enquiries within one business day. For urgent requests, call or WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="map-embed">
+      <!-- Replace with a Google Maps iframe using full address. Placeholder below. -->
+      <div class="map-placeholder">[Google Map embed for Ludhiana address — add exact address & embed]</div>
+    </div>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
